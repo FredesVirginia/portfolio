@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import 'rsuite/dist/rsuite.min.css';
+body {
+  font-family: 'Lato', sans-serif;
+}
+

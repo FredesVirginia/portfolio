@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import 'rsuite/dist/rsuite.min.css';
+
+.mi-boton:hover {
+  animation: pulse 1s;
+}
