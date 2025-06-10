@@ -1,12 +1,17 @@
 
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Inicio from './componets/Inicio'
+
+import Router from './routes/router'
 
 function App() {
   
 
   return (
-   <Inicio/>
+  //  <Inicio/>
+  <BrowserRouter>
+  <Router/>
+  </BrowserRouter>
   )
 }
 

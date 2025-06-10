@@ -1,30 +1,46 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { Button } from "rsuite";
-import LOGO from "../assets/blue_brand__1_-removebg-preview.png";
-import FONDO from "../assets/christmas-background-1197753_1280.jpg";
+import LOGO from "../assets/logooooooo.png";
+import FONDO from "../assets/segundo.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import Snowfall from 'react-snowfall';
+import { useNavigate } from "react-router-dom";
 export default function Inicio() {
+
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-screen">
-      {/* Imagen de fondo con opacidad usando un div absoluto */}
+    <Snowfall
+        snowflakeCount={30}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: 10, // Asegura que la nieve esté por encima del fondo
+          pointerEvents: 'none', // Permite interactuar con los elementos debajo
+        }}
+        color="white" // Puedes personalizar el color
+      />
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${FONDO})` }}
       >
-        {/* Capa semitransparente encima de la imagen */}
+      
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
-      {/* Contenido encima, centrado vertical y horizontalmente */}
+    
       <div className="relative z-10 flex items-center justify-center min-h-screen">
         <div
           className=" p-8 rounded-md max-w-lg text-center flex flex-col justify-center items-center gap-5"
           style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
         >
-          <div className="h-30 w-30 rounded-full  flex justify-center items-center border-4 border-blue-400">
+          <div className="h-30 w-30 rounded-full  flex justify-center items-center border-4 border-blue-400 shadow-2xl shadow-blue-500">
             <img
               src={LOGO}
               alt=""
@@ -40,12 +56,13 @@ export default function Inicio() {
           </p>
           <div className="flex gap-5">
             <Button
+            onClick={()=> navigate("/portfolio")}
               style={{
                 backgroundColor: "#1796F0",
                 color: "white",
                 fontWeight: "bold",
               }}
-              className="text-white flex items-center gap-2 mi-boton"
+              className="text-white flex items-center gap-2 mi-boton   shadow-2xl shadow-blue-500"
             >
               
               Ver mi portfolio <FaLongArrowAltRight />
@@ -57,23 +74,23 @@ export default function Inicio() {
                 color: "#1796F0",
                 fontWeight: "bold",
               }}
-              className="flex items-center gap-2 mi-boton "
+              className=" shadow-2xl shadow-blue-500 flex items-center gap-2 mi-boton "
             >
              
               Contactame <MdOutlineMarkEmailUnread />
             </Button>
           </div>
 
-          <div className="flex gap-5">
-              <a  href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"> 
+          <div className="flex gap-5 shadow-2xl shadow-gray-700">
+              <a  href="https://github.com/FredesVirginia" target="_blank" rel="noopener noreferrer"> 
                 <FaGithub className="bg-gray-500 w-9 h-9 p-1 rounded-full mi-boton" color="white" size={25}/>
               </a>
 
-              <a  href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"> 
+              <a  href="https://www.linkedin.com/in/fredes-virginia-37889511b/" target="_blank" rel="noopener noreferrer"> 
                <FaLinkedin className="bg-gray-500 w-9 h-9 p-1 rounded-full mi-boton" size={25} color="white" />
               </a>
 
-              <a  href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer"> 
+              <a  href="https://www.instagram.com/jonh_clein_dev/" target="_blank" rel="noopener noreferrer"> 
                <FaInstagram  className="bg-gray-500 w-9 h-9 p-1 rounded-full mi-boton" size={25} color="white"/>  
               </a>
              
