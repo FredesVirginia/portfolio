@@ -3,6 +3,7 @@ import Nav from "./layout/Nav";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import SobreMi from "./SobreMi";
 import Proyectos from "./Proyectos";
+import Footer from "./Footer";
 export default function Porfolio() {
   return (
     <div className="overflow-x-hidden">
@@ -40,6 +41,7 @@ export default function Porfolio() {
 
       <SobreMi/>
       <Proyectos/>
+      <Footer/>
     </div>
   );
 }
