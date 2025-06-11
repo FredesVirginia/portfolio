@@ -2,6 +2,7 @@ import { Button } from "rsuite";
 import Nav from "./layout/Nav";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import SobreMi from "./SobreMi";
+import Proyectos from "./Proyectos";
 export default function Porfolio() {
   return (
     <div className="overflow-x-hidden">
@@ -38,6 +39,7 @@ export default function Porfolio() {
       </div>
 
       <SobreMi/>
+      <Proyectos/>
     </div>
   );
 }
