@@ -6,9 +6,13 @@ import Oxford from "../componets/proyect/oxford";
 import Peps from "../componets/proyect/peps";
 import School from "../componets/proyect/school";
 import Ecommerce from "../componets/proyect/ecommerce";
+import ScrollToTop from "../componets/layout/Scrool";
 
 export default function Router() {
   return (
+    //  <ScrollToTop />
+   <>
+   <ScrollToTop />
     <Routes>
       <Route path="/" element={<Inicio />} />
       <Route path="/portfolio" element={<Porfolio />} />
@@ -18,6 +22,6 @@ export default function Router() {
        <Route path="/proyecto/schools" element={<School />} />
      
        <Route path="/proyecto/ecommerce" element={<Ecommerce />} />
-    </Routes>
+    </Routes></>
   );
 }

@@ -20,7 +20,7 @@ export default function School() {
      const images = [PRIMERO, SEGUNDO, TERCERO, CUARTO, QUINTO, SEXTO, SEXTIMO, OCTAVO , NOVANO , DECIMO];
   const [selectedImage, setSelectedImage] = useState(images[0]);
   return (
-   <div className="overflow-x-hidden">
+   <div className="overflow-x-hidden pt-30">
       <Nav />
 
       <div

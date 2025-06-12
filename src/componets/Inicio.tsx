@@ -49,14 +49,14 @@ export default function Inicio() {
           </div>
           <p className="text-white text-5xl">Fredes Virginia</p>
           <p className="text-white ">
-            ¡Bienvenido a mi portfolio! Soy un Desarrollador web especializado
+            ¡Bienvenidos a mi portafolio! Soy una Desarrolladora web especializada
             aplicaciones a medida y sistemas de gestión. Mi pasión es crear
             experiencias digitales eficientes, escalables y con excelente
             experiencia de usuario.
           </p>
           <div className="flex gap-5">
             <Button
-            onClick={()=> navigate("/portfolio")}
+            onClick={()=> {navigate("/portfolio") }}
               style={{
                 backgroundColor: "#1796F0",
                 color: "white",
@@ -68,6 +68,7 @@ export default function Inicio() {
               Ver mi portfolio <FaLongArrowAltRight />
             </Button>
             <Button
+            onClick={()=>{window.location.href = 'mailto:William-Champion@outlook.com'}}
               appearance="default"
               style={{
                 borderColor: "#1796F0",

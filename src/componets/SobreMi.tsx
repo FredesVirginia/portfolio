@@ -11,10 +11,7 @@ export default function SobreMi() {
           <div>
             <div className="h-5"></div>
             <p className=" w-[50rem] text-[17px] text-center">
-              Soy un desarrollador apasionado por la tecnología y la creación de soluciones eficientes. Con experiencia en
-              desarrollo web full stack, me especializo en crear aplicaciones web robustas y escalables. Mi enfoque se centra en
-              escribir código limpio y mantenible, siguiendo las mejores prácticas y metodologías ágiles. Siempre estoy
-              actualizándome con las últimas tecnologías para ofrecer la mejor solución a cada desafío.
+            Soy una desarrolladora web apasionada por la automatización de procesos y la eliminación de tareas repetitivas, así como por la creación de soluciones escalables y a medida. Con experiencia en desarrollo web full stack. Mi enfoque se centra en escribir código limpio y mantenible, siguiendo las mejores prácticas y metodologías ágiles. Siempre estoy actualizándome con las últimas tecnologías para ofrecer la mejor solución a cada desafío.
             </p>
           </div>
         </div>

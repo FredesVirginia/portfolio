@@ -1,23 +1,12 @@
-import { useState } from "react";
-import PRIMERO from "../../assets/Schools/Captura de pantalla (115).png";
-import SEGUNDO from "../../assets/Schools/Captura de pantalla (133).png";
-import TERCERO from "../../assets/Schools/Captura de pantalla (134).png";
-import CUARTO from "../../assets/Schools/Captura de pantalla (135).png";
-import QUINTO from "../../assets/Schools/Captura de pantalla (136).png";
-import SEXTO from "../../assets/Schools/Captura de pantalla (137).png";
-import SEXTIMO from "../../assets/Schools/Captura de pantalla (138).png";
-import OCTAVO from "../../assets/Schools/Captura de pantalla (139).png";
-import NOVANO from "../../assets/Schools/Captura de pantalla (140).png";
-import DECIMO from "../../assets/Schools/Captura de pantalla (141).png";
 import FONDO from "../../assets/quinto.jpg";
 import Footer from "../Footer";
 import ContactForm from "../layout/FormularioOxford";
 import Nav from "../layout/Nav";
 export default function Ecommerce() {
-  const images = [PRIMERO, SEGUNDO, TERCERO, CUARTO, QUINTO, SEXTO, SEXTIMO, OCTAVO, NOVANO, DECIMO];
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+  
+
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden pt-30">
       <Nav />
 
       <div

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function ContactForm() {
+
+
+export default function ContactForm2() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
@@ -11,7 +13,6 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulación de envío
     setTimeout(() => {
       setFormData({ name: "", email: "", message: "" });
       setSubmitted(true);
@@ -28,7 +29,7 @@ export default function ContactForm() {
         className="text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-         ¿Quieres un sistema de gestión  como esta?
+          Contame sobre tu proyecto
         </h2>
         <span className="block h-1 w-32 bg-cyan-400 rounded-full mt-3 mb-8 mx-auto"></span>
       </motion.div>
@@ -92,3 +93,4 @@ export default function ContactForm() {
     </div>
   );
 }
+

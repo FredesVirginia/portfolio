@@ -18,7 +18,7 @@ export default function Oxford() {
   const [selectedImage, setSelectedImage] = useState(images[7]);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden pt-30">
       <Nav />
 
       <div

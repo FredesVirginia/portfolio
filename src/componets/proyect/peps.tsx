@@ -20,7 +20,7 @@ export default function Peps() {
   const images = [PRIMERO, SEGUNDO, TERCERO, CUARTO, QUINTO, SEXTO, SEPTIMO, OCTAVO, NOVIEMBRE];
   const [selectedImage, setSelectedImage] = useState(images[0]);
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden pt-30">
       <Nav />
 
       <div
